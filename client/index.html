@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oinker! 🐷</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Oinker! 🐷</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form class="oink-form">
+                <div class="col s4">
+                    <label for="name" style="font-size: 14;">Name (max 30 characters)</label>
+                    <input class="col s4" type="text" id="name" name="name"></input> 
+                    <label for="content" style="font-size: 14">Oink! (max 100 characters)</label>
+                    <textarea class="col s6" type="text" id="content" name="content" style="resize: none; height: 120px; margin-top: 5px; margin-bottom: 7px;"></textarea>
+                    <button class="waves-effect waves-light btn-small"  id="send-btn" name="send-btn">Send Oink! 🐽</button>
+                    
+                </div>
+                
+            </form>
+            <div class='progress'>
+                <div class='indeterminate'></div>
+            </div>
+            <div class='oinks'>
+                
+            </div>
+        </div>
+    </main>
+    <script src="client.js"></script>
+</body>
+</html>
