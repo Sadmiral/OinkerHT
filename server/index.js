@@ -33,7 +33,7 @@ app.get('/oinks',  (req, res) => {
 //Check that the user input is not empty and name is <= 30 characters and content <= 100 characters
 function isValidOink(oink) {
     return oink.name && oink.name.toString().trim() != '' && 
-    oink.content && oink.content.toString().trim() != ''; //&& oink.name.toString().length <= 30 && oink.content.toString().length <= 100;
+    oink.content && oink.content.toString().trim() != '' && oink.name.toString().length <= 30 && oink.content.toString().length <= 100;
 }
 
 app.post('/oinks', (req, res) => {
