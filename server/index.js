@@ -14,7 +14,6 @@ const filter = new Filter();
 app.use(cors());
 //json body parser for incoming requests
 app.use(express.json());
-db.collection("oinks").drop();
 
 app.get('/', (req, res) => {
     res.json({
