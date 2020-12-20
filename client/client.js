@@ -44,11 +44,10 @@ form.addEventListener("submit", (event) => {
 function listAllOinks() {
     //blank out every other oink and list new ones
     oinksElement.innerHTML = '';
-    
+    loadingElement.style.display = '';
     fetch(API_URL)
         .then(response => response.json())
         .then(oinks => {
-            console.log(oinks);
             oinks.reverse();
             oinks.forEach(oink => {
                 const div = document.createElement('div');
